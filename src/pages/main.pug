@@ -1,0 +1,93 @@
+extends ../templates/template
+block content
+  main
+    .container
+      section.service
+        .row
+          .col-md-12
+            .title Выберите услугу
+        .service-wrap
+          .row
+            .col-md-2.offset-2
+              +service-select({
+                title: 'ЗD печать',
+                img: 'service-1.svg',
+                width: '94px',
+                height: '109px'
+
+              })
+            .col-md-2.offset-1
+              +service-select({
+                title: 'ЗD сканирование',
+                img: 'service-2.svg',
+                width: '109px',
+                height: '109px'
+              })
+            .col-md-2.offset-1
+              +service-select({
+                title: 'ЗD моделирование',
+                img: 'service-3.svg',
+                width: '130px',
+                height: '126px'
+
+              })
+            .col-md-2.offset-2
+              +service-select({
+                title: 'Литье пластмасс',
+                img: 'service-4.svg',
+                width: '91px',
+                height: '106px'
+              })
+            .col-md-2.offset-1
+              +service-select({
+                title: 'Сувенирная продукция',
+                img: 'service-5.svg',
+                width: '120px',
+                height: '120px'
+
+              })
+            .col-md-2.offset-1
+              +service-select({
+                title: 'Комплексные решения',
+                img: 'service-6.svg',
+                width: '96px',
+                height: '96px'
+              })
+        .row
+          .col-md-12
+            .title Воспользуйтесь нашими услугами
+            .text-wrap
+              .text_p Оставьте заявку, мы свяжемся с Вами
+                .span-br в ближайшее время.
+              a(href="javascript:void(0);").button Оставить заявку
+    section.portfolio
+      .portfolio-wrap
+        .container
+          .row
+            .col-md-12
+              .title Наше портфолио
+              .text-wrap
+                .text_p Каждый день мы печатаем десятки моделей, изготавливаем 
+                  .span-br макеты, рисуем, сканируем и моделируем сложные проекты!
+            .col-md-12
+              .portfolio-menu
+                +button-tr("Все")
+                +button-tr("Сувенирная продукция")
+                +button-tr("3D печать из полимиада")
+                +button-tr("3D печать из фотополимера")
+                +button-tr("3D сканирование")
+                +button-tr("Макеты")
+                +button-tr("3D моделирование")
+                +button-tr("Литье пластмасс")
+                +button-tr("Лазерная стереолитография ( SLA)")
+                +button-tr("3D печать из ABS-пластика")
+                +button-tr("3D печать из гипсополимера")
+                
+                
+                
+            .col-md-12
+              .portfolio-picture
+          
+    
+
+

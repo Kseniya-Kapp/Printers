@@ -1,0 +1,9 @@
+mixin service-select(data)
+  a(href="javascript:void(0);").service-select
+    .img-wrap
+      img(src=`../img/${data.img}` alt='', title='' width=data.width height=data.height).service-select__pic
+    .service-select__title=data.title
+
+mixin button-tr(title)
+  a(href="javascript:void(0);").button-tr=title
+  

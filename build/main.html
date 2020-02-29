@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>In Tempo</title>
+    <link rel="stylesheet" href="css/plugins/bootstrap.css">
+    <link rel="stylesheet" href="css/plugins/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/plugins/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/plugins/slick.css">
+    <link rel="stylesheet" href="css/plugins/slick-theme.css">
+    <link rel="stylesheet" href="css/plugins/nanoscroller.css">
+    <link rel="stylesheet" href="css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="css/plugins/dropzone.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+  </head>
+  <body itemscope="itemscope" itemtype="http://schema.org/WebPage">
+    <header class="header-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header">
+              <div class="header-left">
+                <div class="header-logo"><a class="header-logo-link" href="javascript:void(0);"><img class="logo" src="../img/Logo.svg" alt="лого" title=""></a></div>
+                <div class="header-menu">
+                  <ul class="header-menu_list">
+                    <li class="header-menu__item"><a class="header-menu__link" href="javascript:void(0);">О нас</a></li>
+                    <li class="header-menu__item"><a class="header-menu__link" href="javascript:void(0);">Услуги</a></li>
+                    <li class="header-menu__item"><a class="header-menu__link" href="javascript:void(0);">Потрфолио</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-rigth">
+                <div class="header-text"><a class="header-contacts_one" href="tel:+7 (70) 596-77-83">+7 (70) 596-77-83</a><a class="header-contacts_two" href="tel:+7 (70) 596-77-83">+7 (70) 596-77-83</a></div><a class="btn btn--red" href="javascript:void(0);">Оставить заявку  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--.container-->
+      <!--  .header-top-->
+      <!--    .header-top__left-->
+      <!--      a(href="javascript:void(0);")-->
+      <!--        img(src='../img/logo.svg' alt='', title='').logo-->
+      <!--      .promo-wrap-->
+      <!--        .promo-->
+      <!--          span.span-promo-default Ввести промокод-->
+      <!--          span.span-promo-action Действует промокод-->
+      <!---->
+      <!--        //.promo-tooltip.tooltip-error-->
+      <!--        //.promo-tooltip.tooltip-action-->
+      <!--        //.promo-tooltip.tooltip-complete-->
+      <!--        .header-tooltip.tooltip-default-->
+      <!--          .promo-tooltip__title-->
+      <!--            span.span-default Введите промокод и нажмите кнопку применить*-->
+      <!--            span.span-error Промокод введён не верно-->
+      <!--            span.span-complete Промокод введён верно-->
+      <!--            span.span-action Действует промокод-->
+      <!--          .input-wrap-->
+      <!--            input(type='text' placeholder="Промокод").input-->
+      <!--          +button-green('Применить')-->
+      <!---->
+      <!---->
+      <!---->
+      <!--      .call-wrap.call-wrap__info-->
+      <!--        .info Информация-->
+      <!--        .header-tooltip-->
+      <!--          ul.info-list-->
+      <!--            li.info-item-->
+      <!--              a(href="javascript:void(0);").info-item__link Программа лояльности -->
+      <!--            li.info-item-->
+      <!--              a(href="javascript:void(0);").info-item__link Отзывы  -->
+      <!---->
+      <!--            li.info-item-->
+      <!--              a(href="javascript:void(0);").info-item__link Наши пиццерии-->
+      <!--            li.info-item-->
+      <!--              a(href="javascript:void(0);").info-item__link Доставка  -->
+      <!--            li.info-item-->
+      <!--              a(href="javascript:void(0);").info-item__link О нас  -->
+      <!--            li.info-item-->
+      <!--              a(href="javascript:void(0);").info-item__link Контакты-->
+      <!---->
+      <!---->
+      <!--      .header-top__block-->
+      <!--        .header-top__block-item-->
+      <!--          img(src='../img/Star.svg' alt='', title='').estim-img-->
+      <!--          .span 4.20-->
+      <!--          .text Средняя оценка-->
+      <!--        .header-top__block-item.header-top__block-item_time-->
+      <!--          .header-top__block-item_inner-->
+      <!--            img(src='../img/clock-icon.svg' alt='', title='').time-img-->
+      <!--            .span 30 минут   -->
+      <!--            .text Среднее время доставки-->
+      <!--          .time-tooltip-->
+      <!--            .time-tooltip-num 34 минуты-->
+      <!--            .time-tooltip-title Среднее время доставки-->
+      <!--            .time-tooltip-desc-->
+      <!--              | Если не успеем за 60 минут, -->
+      <!--              | вы получите сертификат -->
+      <!--              | на большую пиццу-->
+      <!--            .rating-->
+      <!--              .rating-num 4.20-->
+      <!--              .stars-block-->
+      <!--                .stars-line-->
+      <!--                .stars-line_full(style="width: 90%;")-->
+      <!--            .ratio Средняя оценка покупателей -->
+      <!---->
+      <!---->
+      <!---->
+      <!--    .header-top__right-->
+      <!--      a(href="tel:+7 (3532) 66-50-50").header-top__tel +7 (3532) 66-50-50-->
+      <!--      .call-wrap-->
+      <!--        +button-tr('Заказать звонок')-->
+      <!--        .header-tooltip-->
+      <!--          +input('Имя')-->
+      <!--          .input-wrap-->
+      <!--            //.input-check-->
+      <!--            //.input-clear-->
+      <!--            input(type='text' placeholder='+ 7 (...)').input.input-phone-->
+      <!--          +button-green('Оставить заявку')-->
+      <!---->
+      <!--.header-bottom__wrap-->
+      <!--  .container-->
+      <!--    .header-bottom-->
+      <!--      a(href="javascript:void(0);")-->
+      <!--        img(src='../img/logo.svg' alt='', title='').logo.logo-scroll-->
+      <!---->
+      <!--      ul.header-menu-->
+      <!--        li.header-menu__item.active-->
+      <!--          a(href="javascript:void(0);").header-menu__link Пицца         -->
+      <!--        li.header-menu__item-->
+      <!--          a(href="javascript:void(0);").header-menu__link Горячее        -->
+      <!--        li.header-menu__item-->
+      <!--          a(href="javascript:void(0);").header-menu__link Комбо         -->
+      <!--        li.header-menu__item-->
+      <!--          a(href="javascript:void(0);").header-menu__link Наборы        -->
+      <!--        li.header-menu__item-->
+      <!--          a(href="javascript:void(0);").header-menu__link Салаты         -->
+      <!--        li.header-menu__item-->
+      <!--          a(href="javascript:void(0);").header-menu__link Снеки      -->
+      <!--        li.header-menu__item-->
+      <!--          a(href="javascript:void(0);").header-menu__link Десерты    -->
+      <!--        li.header-menu__item-->
+      <!--          a(href="javascript:void(0);").header-menu__link Напитки    -->
+      <!--        li.header-menu__item.action-->
+      <!--          a(href="javascript:void(0);").header-menu__link Акции-->
+      <!---->
+      <!--      .header-order-->
+      <!--        .call-wrap.call-wrap_cart-->
+      <!--          a(href="javascript:void(0);").cart-wrap-->
+      <!--            img(src='../img/cart-icon.svg' alt='', title='').cart-icon-->
+      <!--            .cart-num 1-->
+      <!--          .header-tooltip.cart-active-->
+      <!--            .header-tooltip__inner-->
+      <!--              .cart-tooltip-->
+      <!--                .cart-tooltip-nano.nano-->
+      <!--                  .cart-tooltip-content.nano-content-->
+      <!--                    +cart-tooltip__item-->
+      <!--                    +cart-tooltip__item-->
+      <!--                    +cart-tooltip__item-->
+      <!--                    +cart-tooltip__item-->
+      <!---->
+      <!---->
+      <!---->
+      <!---->
+      <!--              //.tooltip-cart__title Ой, в корзине пусто-->
+      <!--              //img(src='../img/cart-empty.png' alt='', title='').img-cart-empty-->
+      <!--              //+button-green('Перейти к покупкам')-->
+      <!--              .cart-slider-->
+      <!--                .slider__wrap.slider__wrap_small-->
+      <!--                  .slider-small-cart-->
+      <!--                    +slider-small__item-->
+      <!--                    +slider-small__item-->
+      <!--                    +slider-small__item-->
+      <!--                    +slider-small__item-->
+      <!--                    +slider-small__item-->
+      <!--                    +slider-small__item-->
+      <!--                  .container-arrows-->
+      <!---->
+      <!---->
+      <!--        .call-wrap.call-wrap_reg-->
+      <!--          a(href="javascript:void(0);").button.button-reg.button-green Войти/Регистрация-->
+      <!--          //.header-tooltip-->
+      <!--          //  +input('Имя')-->
+      <!--          //  +input('Дата рождения')-->
+      <!--          //  .input-wrap-->
+      <!--          //    //.input-check-->
+      <!--          //    //.input-clear-->
+      <!--          //    input(type='text' placeholder='+ 7 (...)').input.input-phone-->
+      <!--          //  +button-green('Подтвердить номер')-->
+      <!--          //  +input('Введите код из смс')-->
+      <!--          //  +input-password('Придумайте пароль')-->
+      <!--          //  +input-password('Ведите пароль ещё раз')-->
+      <!--          //  +button-green('Регистрация')-->
+      <!--          //  a(href="javascript:void(0);").enter Вход-->
+      <!--          .header-tooltip-->
+      <!--            .input-wrap-->
+      <!--              //.input-check-->
+      <!--              //.input-clear-->
+      <!--              input(type='text' placeholder='+ 7 (...)').input.input-phone-->
+      <!--            +input-password('Пароль')-->
+      <!--            +button-green('Войти')-->
+      <!--            .enter-wrap-->
+      <!--              a(href="javascript:void(0);").fogot Забыли пароль?-->
+      <!--              a(href="javascript:void(0);").enter Регистрация-->
+      <!--            -->
+      <!--            -->
+      <!--          -->
+    </header>
+    <!--include ../_components/menu-mob-->
+    <!--include ../_components/modals-->
+    <div class="header-fade"></div>
+    <div class="wrapper">
+      <main>
+        <div class="container">
+          <section class="service">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="title">Выберите услугу</div>
+              </div>
+            </div>
+            <div class="service-wrap">
+              <div class="row">
+                <div class="col-md-2 offset-2"><a class="service-select" href="javascript:void(0);">
+                      <div class="img-wrap"><img class="service-select__pic" src="../img/service-1.svg" alt="" title="" width="94px" height="109px"></div>
+                      <div class="service-select__title">ЗD печать</div></a>
+                </div>
+                <div class="col-md-2 offset-1"><a class="service-select" href="javascript:void(0);">
+                      <div class="img-wrap"><img class="service-select__pic" src="../img/service-2.svg" alt="" title="" width="109px" height="109px"></div>
+                      <div class="service-select__title">ЗD сканирование</div></a>
+                </div>
+                <div class="col-md-2 offset-1"><a class="service-select" href="javascript:void(0);">
+                      <div class="img-wrap"><img class="service-select__pic" src="../img/service-3.svg" alt="" title="" width="130px" height="126px"></div>
+                      <div class="service-select__title">ЗD моделирование</div></a>
+                </div>
+                <div class="col-md-2 offset-2"><a class="service-select" href="javascript:void(0);">
+                      <div class="img-wrap"><img class="service-select__pic" src="../img/service-4.svg" alt="" title="" width="91px" height="106px"></div>
+                      <div class="service-select__title">Литье пластмасс</div></a>
+                </div>
+                <div class="col-md-2 offset-1"><a class="service-select" href="javascript:void(0);">
+                      <div class="img-wrap"><img class="service-select__pic" src="../img/service-5.svg" alt="" title="" width="120px" height="120px"></div>
+                      <div class="service-select__title">Сувенирная продукция</div></a>
+                </div>
+                <div class="col-md-2 offset-1"><a class="service-select" href="javascript:void(0);">
+                      <div class="img-wrap"><img class="service-select__pic" src="../img/service-6.svg" alt="" title="" width="96px" height="96px"></div>
+                      <div class="service-select__title">Комплексные решения</div></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="title">Воспользуйтесь нашими услугами</div>
+                <div class="text-wrap">
+                  <div class="text_p">Оставьте заявку, мы свяжемся с Вами
+                    <div class="span-br">в ближайшее время.</div>
+                  </div><a class="button" href="javascript:void(0);">Оставить заявку</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="portfolio">
+          <div class="portfolio-wrap">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="title">Наше портфолио</div>
+                  <div class="text-wrap">
+                    <div class="text_p">Каждый день мы печатаем десятки моделей, изготавливаем 
+                      <div class="span-br">макеты, рисуем, сканируем и моделируем сложные проекты!</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="portfolio-menu"><a class="button-tr" href="javascript:void(0);">Все</a><a class="button-tr" href="javascript:void(0);">Сувенирная продукция</a><a class="button-tr" href="javascript:void(0);">3D печать из полимиада</a><a class="button-tr" href="javascript:void(0);">3D печать из фотополимера</a><a class="button-tr" href="javascript:void(0);">3D сканирование</a><a class="button-tr" href="javascript:void(0);">Макеты</a><a class="button-tr" href="javascript:void(0);">3D моделирование</a><a class="button-tr" href="javascript:void(0);">Литье пластмасс</a><a class="button-tr" href="javascript:void(0);">Лазерная стереолитография ( SLA)</a><a class="button-tr" href="javascript:void(0);">3D печать из ABS-пластика</a><a class="button-tr" href="javascript:void(0);">3D печать из гипсополимера</a>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="portfolio-picture"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer-wrap">
+        <!--.footer-wrap__top-->
+        <!--  .container-->
+        <!--    .row.footer-top-->
+        <!--      .col-7-->
+        <!--        ul.footer-menu-->
+        <!--          li.footer-item-->
+        <!--            a(href="javascript:void(0);").footer-link Обратная связь-->
+        <!--          li.footer-item-->
+        <!--            a(href="javascript:void(0);").footer-link Акции-->
+        <!--          li.footer-item-->
+        <!--            a(href="javascript:void(0);").footer-link Каталог блюд-->
+        <!--          li.footer-item-->
+        <!--            a(href="javascript:void(0);").footer-link Доставка-->
+        <!--          li.footer-item-->
+        <!--            a(href="javascript:void(0);").footer-link О нас-->
+        <!--          li.footer-item-->
+        <!--            a(href="javascript:void(0);").footer-link Контакты-->
+        <!--          li.footer-item-->
+        <!--            a(href="javascript:void(0);").footer-link Программа лояльности-->
+        <!--          li.footer-item-->
+        <!--            a(href="javascript:void(0);").footer-link Отзывы-->
+        <!--          li.footer-item-->
+        <!--            a(href="javascript:void(0);").footer-link Наши пиццерии-->
+        <!---->
+        <!--      .col-5-->
+        <!--        .footer-top__left-->
+        <!--          +button-green('Оставить отзыв')-->
+        <!--          .footer-top__contact-->
+        <!--            a(href="tel:+7 (3532) 66-50-50").tel-contact +7 (3532) 66-50-50-->
+        <!--            a(href="mailto:feedback@intempopizza.com").mail-contact feedback@intempopizza.com -->
+        <!--.footer-wrap__bottom-->
+        <!--  .container-->
+        <!--    .footer__bottom-->
+        <!--      .footer__bottom-left-->
+        <!--        .logo-text ООО "ОренФуд"-->
+        <!--        ul.footer-menu-->
+        <!--          li.footer-item-->
+        <!--            a(href="javascript:void(0);").footer-link Правовая информация-->
+        <!--          li.footer-item-->
+        <!--            a(href="javascript:void(0);").footer-link Помощь-->
+        <!--          li.footer-item-->
+        <!--            a(href="javascript:void(0);").footer-link Работа в InTempo-->
+        <!---->
+        <!--      .footer__bottom__right-->
+        <!--        .social-->
+        <!--          .social-item-->
+        <!--            a(href="javascript:void(0);").social-link.social-link_in-->
+        <!--          .social-item-->
+        <!--            a(href="javascript:void(0);").social-link.social-link_vk-->
+        <!--          .social-item-->
+        <!--            a(href="javascript:void(0);").social-link.social-link_fb-->
+        <!--          .social-item-->
+        <!--            a(href="javascript:void(0);").social-link.social-link_you-->
+        <!--        .logo-footer -->
+        <!--        -->
+      </footer>
+    </div>
+    <script src="js/plugins/jquery-3.4.1.min.js"></script>
+    <script src="js/plugins/bootstrap.js"></script>
+    <script src="js/plugins/jquery.formstyler.min.js"></script>
+    <script src="js/plugins/jquery.maskedinput.js"></script>
+    <script src="js/plugins/jquery.nanoscroller.min.js"></script>
+    <script src="js/plugins/slick.js"></script>
+    <script src="js/plugins/readmore.js"></script>
+    <script src="js/plugins/jquery.magnific-popup.js"></script>
+    <script src="js/plugins/flexmenu.js"></script>
+    <script src="js/plugins/modernizr.custom.js"></script>
+    <script src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="js/plugins/dropzone.min.js"></script>
+    <script src="js/plugins/dropzone-amd-module.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=103ba73d-586f-49f7-9662-c26f48f3fcee" type="text/javascript"></script>
+    <!--script(src="js/map-sidebar.js" type="text/javascript")-->
+    <script src="js/map.js" type="text/javascript"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -7,3 +7,12 @@ mixin service-select(data)
 mixin button-tr(title)
   a(href="javascript:void(0);").button-tr=title
   
+mixin portfolio-picture-item(img)
+  .col-md-3
+    .portfolio-picture-item
+      .picture_link-wrap
+        a(href="javascript:void(0);").picture_link
+          .picture_link-text Подробнее
+      .picture_img(style="background-image:url('../img/potfolio1.jpg')")
+mixin button-tr-red(title)
+  a(href="javascript:void(0);").button-tr-red=title

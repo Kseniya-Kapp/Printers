@@ -70,24 +70,32 @@ block content
                 .text_p Каждый день мы печатаем десятки моделей, изготавливаем 
                   .span-br макеты, рисуем, сканируем и моделируем сложные проекты!
             .col-md-12
-              .portfolio-menu
-                +button-tr("Все")
-                +button-tr("Сувенирная продукция")
-                +button-tr("3D печать из полимиада")
-                +button-tr("3D печать из фотополимера")
-                +button-tr("3D сканирование")
-                +button-tr("Макеты")
-                +button-tr("3D моделирование")
-                +button-tr("Литье пластмасс")
-                +button-tr("Лазерная стереолитография ( SLA)")
-                +button-tr("3D печать из ABS-пластика")
-                +button-tr("3D печать из гипсополимера")
-                
-                
-                
+              .portfolio-menu__wrap
+                .portfolio-menu
+                  +button-tr("Все")
+                  +button-tr("Сувенирная продукция")
+                  +button-tr("3D печать из полимиада")
+                  +button-tr("3D печать из фотополимера")
+                  +button-tr("3D сканирование")
+                  +button-tr("Макеты")
+                  +button-tr("3D моделирование")
+                  +button-tr("Литье пластмасс")
+                  +button-tr("Лазерная стереолитография ( SLA)")
+                  +button-tr("3D печать из ABS-пластика")
+                  +button-tr("3D печать из гипсополимера")
+          .row.portfolio-picture
+            +portfolio-picture-item
+            +portfolio-picture-item
+            +portfolio-picture-item
+            +portfolio-picture-item
+            +portfolio-picture-item
+            +portfolio-picture-item
+            +portfolio-picture-item
+            +portfolio-picture-item
+            .pixel-box  
+          .row
             .col-md-12
-              .portfolio-picture
-          
-    
+              .button-wrap
+                +button-tr-red ("Все работы")
 
 

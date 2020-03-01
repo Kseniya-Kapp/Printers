@@ -38,6 +38,15 @@
   flex-direction: column;
   min-height: calc(100% - 10.94rem);
 }
+.header{
+  background: #24252D;
+}
+.header-menu__link{
+  font-size: 18px;
+  color:#F2F2F2 ;
+   }
+
+
 
 main {
   flex: 1 0 auto;
@@ -59,9 +68,7 @@ footer {
   margin: 36px auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  //color: #0B2349;
   display: table;
-  //margin: 20px auto;
 }
 .service-wrap{
   margin-bottom:-52px;
@@ -102,8 +109,18 @@ footer {
   text-align: center;
 }
 .portfolio-wrap{
-  @include background-cover-top('background2.png');
+  @include background-cover-top('background2-1.png');
   padding-top: 104px;
+}
+.portfolio-menu__wrap{
+  margin-bottom: 49px;
+}
+
+.portfolio-menu{
+  margin-bottom: -21px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .button-tr{
   color:#F2F2F2;
@@ -120,4 +137,177 @@ footer {
     box-shadow: 4px 4px 15px rgba(239, 101, 111, 0.15);
 
   }
+}
+.portfolio-picture{
+  margin-bottom: 49px;
+  position: relative;
+}
+.portfolio-picture-item{
+  height: 271px;
+  position: relative;
+  margin-bottom: 21px;
+  }
+.picture_img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+  width: 100%;
+}
+.picture_link{
+  background: #FFFFFF;
+  box-shadow: 4px 4px 15px rgba(239, 101, 111, 0.15);
+  border-radius: 3px;
+  padding: 10px 53px 10px 53px;
+  text-align: center;
+  justify-content: center;
+
+}
+.picture_link-text{
+  display: inline-flex;
+  font-family: $GilroySemiBold;
+  font-size: 14px;
+  text-align: center;
+  background: linear-gradient(163.21deg, #FF512F -2.07%, #DD2476 85.86%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.picture_link-wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.button-tr-red{
+  color:#F2F2F2;
+  display: inline-block;
+  padding: 15px 64px;
+  //border: 1px solid #F2F2F2;
+  border: 1px solid #FF512F;
+  //box-shadow: 4px 4px 15px rgba(239, 101, 111, 0.15);
+  border-radius: 3px;
+  margin-right: 21px;
+  margin-bottom: 21px;
+  &:hover{
+    background: linear-gradient(123.78deg, #FF512F -2.07%, #DD2476 85.86%);
+    color:#F2F2F2;
+
+  }
+}
+.button-wrap{
+  display: flex;
+  justify-content: center;
+}
+.pixel-box {
+  position: absolute;
+  @include background-contain("pixel-box.svg");
+  height: 198px;
+  width: 199px;
+  left: -60px;
+  bottom: -60px;
+}
+.footer-wrap{
+  background: #24252D;
+}
+.footer__top{
+  display: flex;
+  padding: 85px 0;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.75);
+}
+.footer__top-left{
+  display: flex;
+}
+.footer__tel{
+  display: flex;
+  margin-right: 71px;
+  align-items: center;
+}
+
+.footer__tel-link{
+  font-family: $GilroyMedium;
+  font-size: 18px;
+  color:#F2F2F2;
+  display: block;
+  margin-bottom: 7px;
+  @include last-mb-0
+}
+.title_footer{
+  font-family: $GilroyMedium;
+  font-size: 18px;
+  color:#F2F2F2;
+}
+.footer__mail-block{
+  font-family: $GilroyMedium;
+  font-size: 18px;
+  color:#F2F2F2;
+}
+.img_tel{
+  margin-right:21px;
+ 
+}
+.footer__top-rigth{
+  display: flex;
+  justify-content: space-between;
+}
+.img_adr{
+  margin-right:21px;
+}
+.footer_adr {
+  display: flex;
+}
+.title_network{
+  font-family: $GilroyMedium;
+  font-size: 24px;
+  color:#F2F2F2;
+  margin-right: 28px;
+}
+.footer__bottom{
+  padding:57px 0;
+}
+.title_footer-bottom{
+  font-family: $GilroyMedium;
+  font-size: 14px;
+  color:#FFFFFF;
+}
+
+.social__link{
+  display: block;
+  @include width-flex(29px)
+  height: 29px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social__link_wk{
+  background-image:url('../img/vk.svg');
+}
+.social__link_in{
+  background-image:url('../img/in.svg');
+}
+.social{
+  display: flex;
+  align-items: center;
+}
+.social__wrap{
+  display: flex;
+  align-items: center;
+}
+
+.social__item{
+  margin-right: 28px;
+  @include last-mr-0
+}
+
+.footer__bottom-block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

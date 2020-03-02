@@ -144,11 +144,59 @@ body, html {
   min-height: calc(100% - 10.94rem); }
 
 .header {
-  background: #24252D; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.header-wrap {
+  background-image: url("../img/background-header.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 1374px; }
+
+.header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 160px; }
+
+.header-menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .header-menu__link {
   font-size: 18px;
-  color: #F2F2F2; }
+  color: #F2F2F2;
+  margin-right: 73px; }
+  .header-menu__link:last-child {
+    margin-right: 0; }
+
+.header-rigth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header-text {
+  margin-right: 197px; }
+
+.header-contacts_link {
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-right: 20px; }
+  .header-contacts_link:last-child {
+    margin-right: 0; }
 
 main {
   -webkit-box-flex: 1;
@@ -160,6 +208,25 @@ footer {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto; }
 
+.decision_tack {
+  position: relative; }
+
+.decision_tack-line {
+  border-bottom: 3px solid #DD2476;
+  width: 274px; }
+
+.decision_tack-text {
+  color: #24252D;
+  font-size: 18px;
+  padding-right: 83px; }
+
+.decision_p {
+  margin-bottom: 28px; }
+  .decision_p:last-child {
+    margin-bottom: 0; }
+  .decision_p .span {
+    font-family: "Gilroy-SemiBold"; }
+
 .span-br {
   display: block; }
 
@@ -169,10 +236,14 @@ footer {
   background: -o-linear-gradient(286.79deg, #FF512F -2.07%, #DD2476 85.86%);
   background: linear-gradient(163.21deg, #FF512F -2.07%, #DD2476 85.86%);
   text-align: center;
-  margin: 36px auto;
+  margin-bottom: 36px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: table; }
+  display: table;
+  width: 100%; }
+
+.title-task {
+  text-align: left; }
 
 .service-wrap {
   margin-bottom: -52px; }

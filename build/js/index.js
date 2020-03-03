@@ -885,71 +885,91 @@ jQuery(document).ready(function () {
 //     //
 //     $('.nano').nanoScroller({alwaysVisible: true});
 //
-//   }
+// //   }
+//
+//   $('.orders-nano').nanoScroller({alwaysVisible: true});
+//
+//
+//   $('.promo').on('click', function () {
+//     $(this).parents('.promo-wrap').toggleClass('active')
+//   }); 
+//  
+//   $('.call-wrap .button').on('click', function () {
+//     $(this).parents('.call-wrap').toggleClass('active')
+//   });
+//  
+//   $('.call-wrap .info').on('click', function () {
+//     $(this).parents('.call-wrap').toggleClass('active')
+//   }); 
+//  
+//   $('.catalog-filter').on('click', function () {
+//     $(this).parents('.call-wrap').toggleClass('active')
+//   });
+//  
+//   $('.call-wrap .cart-wrap').on('click', function () {
+//     $(this).parents('.call-wrap').toggleClass('active')
+//     $('.cart-tooltip-nano').nanoScroller({alwaysVisible: true});
+//
+//   });
+//
+//   // $('#modal-product').modal('show');
+//
+//   $('.ingredients__item .delete').on('click', function () {
+//     $(this).parents('.ingredients__item').addClass('active')
+//   });
+//   $('.ingredients__item .back').on('click', function () {
+//     $(this).parents('.ingredients__item').removeClass('active')
+//   }); 
+//  
+//   $('.button-select').on('click', function () {
+//     $(this).addClass('active')
+//     $(this).siblings().removeClass('active')
+//   });
+//
+//   $(window).on("scroll", function () {
+//     var scrolled = $(this).scrollTop();
+//     if( scrolled > 84 ) {
+//       $(".header-bottom__wrap").addClass("active");
+//     }
+//     if( scrolled <= 84 ) {
+//       $(".header-bottom__wrap").removeClass("active");
+//     }
+//   });
+//
+//   $('.data-value__link').on('click', function () {
+//     var parent = $(this).parents('.data-value__wrap');
+//     parent.toggleClass('active');
+//     if(parent.hasClass('active')){
+//       parent.find(".data-input").prop("disabled", false);
+//     }else{
+//       parent.find(".data-input").prop("disabled", true);
+//
+//     }
+//   });
+//   $('#modal-product').on('shown.bs.modal', function() {
+//      $('.nano').nanoScroller({alwaysVisible: true});
+//   })
+//
 
-  $('.orders-nano').nanoScroller({alwaysVisible: true});
+  function loopDown(){
+    $(".img-hex").animate({
+        marginTop : 20
+      },
+      2000, function() {
+        loopUp();
+      });
+  }
 
+  function loopUp(){
+    $(".img-hex").animate({
+        marginTop : 0
+      },
+      2000, function() {
+        loopDown();
+      });
+  }
 
-  $('.promo').on('click', function () {
-    $(this).parents('.promo-wrap').toggleClass('active')
-  }); 
-  
-  $('.call-wrap .button').on('click', function () {
-    $(this).parents('.call-wrap').toggleClass('active')
-  });
-  
-  $('.call-wrap .info').on('click', function () {
-    $(this).parents('.call-wrap').toggleClass('active')
-  }); 
-  
-  $('.catalog-filter').on('click', function () {
-    $(this).parents('.call-wrap').toggleClass('active')
-  });
-  
-  $('.call-wrap .cart-wrap').on('click', function () {
-    $(this).parents('.call-wrap').toggleClass('active')
-    $('.cart-tooltip-nano').nanoScroller({alwaysVisible: true});
-
-  });
-
-  // $('#modal-product').modal('show');
-
-  $('.ingredients__item .delete').on('click', function () {
-    $(this).parents('.ingredients__item').addClass('active')
-  });
-  $('.ingredients__item .back').on('click', function () {
-    $(this).parents('.ingredients__item').removeClass('active')
-  }); 
-  
-  $('.button-select').on('click', function () {
-    $(this).addClass('active')
-    $(this).siblings().removeClass('active')
-  });
-
-  $(window).on("scroll", function () {
-    var scrolled = $(this).scrollTop();
-    if( scrolled > 84 ) {
-      $(".header-bottom__wrap").addClass("active");
-    }
-    if( scrolled <= 84 ) {
-      $(".header-bottom__wrap").removeClass("active");
-    }
-  });
-
-  $('.data-value__link').on('click', function () {
-    var parent = $(this).parents('.data-value__wrap');
-    parent.toggleClass('active');
-    if(parent.hasClass('active')){
-      parent.find(".data-input").prop("disabled", false);
-    }else{
-      parent.find(".data-input").prop("disabled", true);
-
-    }
-  });
-  $('#modal-product').on('shown.bs.modal', function() {
-     $('.nano').nanoScroller({alwaysVisible: true});
-  })
-
+  loopDown();
 
 
 });

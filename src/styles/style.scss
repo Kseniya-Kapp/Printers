@@ -41,6 +41,7 @@
 .header{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 .header-wrap{
   @include background-cover-top("background-header.png");
@@ -75,8 +76,57 @@
   margin-right: 20px;
   @include last-mr-0
 }
+.row-header-position{
+  position: relative;
+}
+.header-top{
+  margin-bottom: 63px;
+}
+.header-top-right{
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.header-top-text{
+  position: relative;
+}
+.img-hex{
+  position: relative;
+  top: -81px;
+  right: -179px;
+}
 
-
+.ddd{
+  position: absolute;
+  bottom: 100px;
+}
+.h1{
+  font-family: $GilroySemiBold;
+  font-size: 48px;
+  color: #F2F2F2;
+  margin-bottom: 46px;
+}
+.text-print_p{
+  font-family: $GilroyMedium;
+  font-size: 24px;
+  color: #F2F2F2;
+  margin-bottom: 53px;
+}
+.row-info{
+  margin-bottom: 60px;
+}
+.info-block{
+  display: flex;
+}
+.title_info-block{
+  color: #F2F2F2;
+  font-family: $GilroyRegular;
+  font-size: 14px;
+}
+.info-block-wrap{
+  width:56px;
+  height: 40px;
+}
 main {
   flex: 1 0 auto;
 }

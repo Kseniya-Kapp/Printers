@@ -44,7 +44,7 @@
   margin-bottom: 100px;
 }
 .header-wrap{
-  @include background-cover-top("background-header.png");
+  @include background-cover-bottom("background-header.png");
   width: 100%;
   min-height: 1374px;
 }
@@ -95,7 +95,15 @@
   top: -81px;
   right: -179px;
 }
-
+.pyramid{
+  position: absolute;
+  top: -500px;
+  left: -100px;
+}
+.opt_decide{
+  position: absolute;
+  top: -400px;
+}
 .ddd{
   position: absolute;
   bottom: 100px;

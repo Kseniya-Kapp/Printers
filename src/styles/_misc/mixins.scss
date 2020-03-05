@@ -57,6 +57,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@mixin background-cover-bottom($url){
+  background-image:url('../img/' + $url);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @mixin background-cover-right($url){
   background-image:url('../img/' + $url);
   background-position: center right;
